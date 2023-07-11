@@ -12,7 +12,10 @@ wss.on("connection", (ws) => {
 });
 
 app.get("/", (req, res) => {
-  return res.send({ message: "Xush kelibsiz" });
+  return res.send({
+    message:
+      "Xush kelibsiz! Websocket " + process.env.PORT + " portda ishga tushdi",
+  });
 });
 app.listen(5000, () => {
   console.log("listening on *:5000");
