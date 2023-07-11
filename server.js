@@ -1,6 +1,6 @@
 const { Server } = require("ws");
 const app = require("express")();
-const wss = new Server({ port: 8080 });
+const wss = new Server({ port: 5001 });
 
 wss.on("connection", (ws) => {
   ws.on("error", (err) => {
