@@ -11,6 +11,9 @@ wss.on("connection", (ws) => {
   });
 });
 
+app.get("/", (req, res) => {
+  return res.send({ message: "Xush kelibsiz" });
+});
 app.listen(5000, () => {
   console.log("listening on *:5000");
 });
